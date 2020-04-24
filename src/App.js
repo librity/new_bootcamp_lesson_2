@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 
+import "./App.css";
+import bacgroundImage from "./assets/1.jpg";
+
 import Header from "./components/Header";
 
 const App = () => {
@@ -12,6 +15,8 @@ const App = () => {
   return (
     <>
       <Header title="Projects" />
+
+      <img width={200} src={bacgroundImage} />
 
       <ul>
         {projects.length > 0 &&
